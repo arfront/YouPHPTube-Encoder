@@ -26,4 +26,7 @@ stages:
         containerRegistry: 'Docker Hub'
         repository: 'arfront/video-encoder'
         command: 'buildAndPush'
+        tags: |
+          latest
+          $(Build.BuildId)
         Dockerfile: '**/Dockerfile'
