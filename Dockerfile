@@ -3,7 +3,7 @@
 # Licensed under the terms of the CC-0 license, see
 # https://creativecommons.org/publicdomain/zero/1.0/deed
 
-FROM php:7-apache
+FROM php:7-apache-stretch
 
 MAINTAINER TheAssassin <theassassin@assassinate-you.net>
 
