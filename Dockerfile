@@ -29,7 +29,10 @@ RUN chown -R www-data. /var/www/html
 
 # create volume
 RUN install -d -m 0755 -o www-data -g www-data /var/www/html/videos
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod a+x /var/www/html/entrypoint.sh /var/www/html/install-sql.sh /var/www/html/make-settings.sh
 
+ENTRYPOINT [ "./entrypoint.sh" ]
 # set non-root user
 USER www-data
 
