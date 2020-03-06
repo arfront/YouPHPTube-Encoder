@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "<?php
-\$global['webSiteRootURL'] = 'https://dev.encoder.poy.cn/';
+\$global['webSiteRootURL'] = 'https://'.'$WEB_URL'.'.encoder.poy.cn';
 \$global['systemRootPath'] = '/var/www/html/';
 
 \$global['disableConfigurations'] = false;

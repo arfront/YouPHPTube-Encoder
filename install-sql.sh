@@ -12,7 +12,7 @@ DBNAME=$DATABASE_NAME'_encoder'  #数据库名称
 ADMINUSER=$ADMIN_USER
 ADMINPASSWORD=$ADMIN_PWD
 WEBTITLE=$WEB_TITLE #网站title
-WEBURL='https://'$WEB_URL #网站域名
+WEBURL='https://'$WEB_URL'.encoder.poy.cn'; #网站域名
 
 
 
