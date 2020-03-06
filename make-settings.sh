@@ -11,7 +11,7 @@ echo "<?php
 \$mysqlHost = '$DATABASE_HOST';
 \$mysqlUser = '$DATABASE_USER';
 \$mysqlPass = '$DATABASE_PWD';
-\$mysqlDatabase = '$DATABASE_NAME'.'-encoder';
+\$mysqlDatabase = '$DATABASE_NAME'.'_encoder';
 
 \$global['allowed'] = array('mp4', 'avi', 'mov', 'flv', 'mp3', 'wav', 'm4v', 'webm', 'wmv', 'mpg', 'mpeg', 'f4v', 'm4v', 'm4a', 'm2p', 'rm', 'vob', 'mkv', '3gp');
 
