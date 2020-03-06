@@ -12,7 +12,7 @@ DBNAME=$DATABASE_NAME'_encoder'  #数据库名称
 ADMINUSER=$ADMIN_USER
 ADMINPASSWORD=$ADMIN_PWD
 WEBTITLE=$WEB_TITLE #网站title
-WEBURL='https://'$WEB_URL'.encoder.poy.cn'; #网站域名
+WEBURL='https://'$WEB_URL'.video.poy.cn'; #网站域名
 
 
 
@@ -23,7 +23,7 @@ WEBURL='https://'$WEB_URL'.encoder.poy.cn'; #网站域名
 create_db_sql="create database IF NOT EXISTS ${DBNAME}"
 
 mysql -h${HOSTNAME} -P${PORT} -u${USERNAME} -p${PASSWORD} -e "${create_db_sql}"
-mysql -u${USERNAME} -p${PASSWORD} ${DBNAME} < /var/www/html/install/database.sql
+mysql -h${HOSTNAME} -u${USERNAME} -p${PASSWORD} ${DBNAME} < /var/www/html/install/database.sql
 
 #sign=`echo -n  $ADMINPASSWORD | md5sum`
 #sign=`echo -n $ADMINPASSWORD |md5sum|cut -d ' ' -f1`
